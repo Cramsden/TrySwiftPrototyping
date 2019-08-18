@@ -1,0 +1,3 @@
+target 'TrySwiftPrototype2' do
+  pod 'Alamofire'
+end

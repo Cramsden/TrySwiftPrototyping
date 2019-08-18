@@ -1,0 +1,223 @@
+{
+  "lab_results" : [
+    {
+      "id": 1,
+      "lab_type": "",
+      "status": "Pending",
+      "title": "CBC Panel",
+      "collected_at": "2019-08-16T23:30:09Z",
+      "panels": [
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        },
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "lab_type": "",
+      "status": "Pending",
+      "title": "CBC Panel",
+      "collected_at": "2019-08-16T23:30:09Z",
+      "panels": [
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        },
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        },
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "lab_type": "",
+      "status": "Pending",
+      "title": "CBC Panel",
+      "collected_at": "2019-08-16T23:30:09Z",
+      "panels": [
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        },
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            },
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        },
+        {
+          "name": "CBC",
+          "discription": "",
+          "measurements": [
+            {
+              "name": "",
+              "reference_range": {
+                "min": 10,
+                "max": 100
+              },
+              "value" : 25,
+              "interpritation": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

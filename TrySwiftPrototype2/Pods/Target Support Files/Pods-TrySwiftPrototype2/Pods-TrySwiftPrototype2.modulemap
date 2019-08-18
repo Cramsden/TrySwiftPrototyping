@@ -1,0 +1,6 @@
+module Pods_TrySwiftPrototype2 {
+  umbrella header "Pods-TrySwiftPrototype2-umbrella.h"
+
+  export *
+  module * { export * }
+}

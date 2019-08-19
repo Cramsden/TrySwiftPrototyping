@@ -10,6 +10,20 @@ struct ProviderOutput: Codable {
     let providers: [Provider]
 }
 
-struct Provider: Codable {
-    
+struct Provider: Codable, Identifiable {
+    let id: Int
+    let displayName: String
+    let profileImageName: String
+    let isPCP: Bool
+    let bio: String
+    let specialty: String
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case displayName = "display_name"
+        case profileImageName = "profile_image_name"
+        case isPCP = "is_pcp"
+        case bio
+        case specialty
+    }
 }

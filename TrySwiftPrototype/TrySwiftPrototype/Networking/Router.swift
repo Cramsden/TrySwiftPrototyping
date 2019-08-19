@@ -18,7 +18,7 @@ enum Router: URLRequestConvertible {
     var method: HTTPMethod {
         switch self {
         case .listLabs, .listOffices, .listProviders:
-            return .post
+            return .get
         }
     }
 

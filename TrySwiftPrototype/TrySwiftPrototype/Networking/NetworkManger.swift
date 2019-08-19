@@ -11,10 +11,6 @@ import Alamofire
 
 class NetworkManager {
 
-    private lazy var sessionManager: SessionManager = {
-        return SessionManager(configuration: URLSessionConfiguration.default)
-    }()
-
     init() {
         Router.baseURL = URL(string: "http://localhost:8000")
     }
@@ -40,7 +36,7 @@ class NetworkManager {
     }
 
     func fetchLabs(completion: @escaping (Error?, [LabResult]) -> ()) {
-        makeCodableRequest(with: .listLabs, ofType: LabResultOutput.self) { (error, labResultsOutput) in
+         makeCodableRequest(with: .listLabs, ofType: LabResultOutput.self) { (error, labResultsOutput) in
             if let error = error {
                 completion(error, [])
             } else {
@@ -50,7 +46,7 @@ class NetworkManager {
     }
 
     private func makeCodableRequest<T: Codable>(with route: Router, ofType type: T.Type, completion: @escaping (Error?, T?) -> ()) {
-        sessionManager.request(Router.listProviders).validate().responseData { dataResponse in
+        Alamofire.request(route).validate().responseData { dataResponse in
             switch dataResponse.result {
             case .success:
                 do {
@@ -83,3 +79,4 @@ class CustomJSONDecoder: JSONDecoder {
         return try decode(type, from: data)
     }
 }
+

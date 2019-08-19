@@ -2,48 +2,48 @@
   "providers": [
     {
       "id": 1,
-      "email": "",
+      "email": "dhjalmar@doctors.com",
       "display_name": "Dalila Hjalmar, MD",
-      "profile_image_name": "img_DHjalmar.pdf",
+      "profile_image_name": "DHjalmarProfile",
       "is_pcp": true,
-      "bio": "Dalila has been a Provider at One Medical for 6 years and focuses on nutritional coaching to help members live their most full lives. She also enjoys CrossFit and Dogs.",
+      "bio": "Dalila has been with the practice for 6 years and focuses on nutritional coaching to help members live their most full lives. She also enjoys CrossFit and Dogs.",
       "specialty": "Nutritional Coaching"
     },
     {
       "id": 2,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "hjulie@doctors.com",
+      "display_name": "Hardwin Julie",
+      "profile_image_name": "HJulieProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Hardwin is passionate about working with families. He often sees kids and their kids and their kids! He enjoys rock climbing and running with his dog skip.",
+      "specialty": "Family Medicine"
     },
     {
       "id": 3,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "nwhetu@doctors.com",
+      "display_name": "Nicolette Whetu",
+      "profile_image_name": "NWhetuProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Nicolette recieved her PHD in Psychology at the University of Brisbane and has been studying family psychology patterns for her research.",
+      "specialty": "Psychology"
     },
     {
       "id": 4,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "kmaya@doctors.com",
+      "display_name": "Kishor Maya, NP",
+      "profile_image_name": "KMayaProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Kishor recently moved from San Francsico to New York and has enjoyed his time in the city eating amazing food. Also, he has practiced medicine in 4 countries.",
+      "specialty": "Internal Medicine"
     },
     {
       "id": 5,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "mmorton@doctors.com",
+      "display_name": "Moses Morton, FNP",
+      "profile_image_name": "MMMortonProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Moses is passionate about providing women with the support and information they need to make the best decisions for themselves.",
+      "specialty": "Women's Health"
     },
     {
       "id": 6,
@@ -89,96 +89,6 @@
       "is_pcp": false,
       "bio": "Shila loves making a connection with patients through her therapy dog Rufus. Stop by if you're having a 'Ruff' day.",
       "specialty": "Internal medicine"
-    },
-    {
-      "id": 11,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 12,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 13,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 14,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 15,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 16,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    },
-    {
-      "id": 17,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    }
-    {
-      "id": 18,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    }
-    {
-      "id": 19,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
-    }
-    {
-      "id": 20,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
-      "is_pcp": false,
-      "bio": "",
-      "specialty": ""
     }
   ]
 }

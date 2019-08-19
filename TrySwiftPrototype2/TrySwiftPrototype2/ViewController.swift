@@ -10,8 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let networkManager = NetworkManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        networkManager.fetchLabs { (error, labs) in
+            print(labs)
+        }
+
+        networkManager.fetchProviders { (error, providers) in
+            print(providers)
+        }
+
+        networkManager.fetchOffices { (error, offices) in
+            print(offices)
+        }
         // Do any additional setup after loading the view.
     }
 

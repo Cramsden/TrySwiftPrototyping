@@ -47,48 +47,48 @@
     },
     {
       "id": 6,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "sognena@doctors.com",
+      "display_name": "Sergio Ognena",
+      "profile_image_name": "SOgnenaProfile, NP",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Sergio has a knack understanding unique needs of childerens as they grow. Outside of work he enjoys movies from the 80's",
+      "specialty": "Pediatrics"
     },
     {
       "id": 7,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "lhieremias@doctors.com",
+      "display_name": "Leah Hieremias, MD",
+      "profile_image_name": "LHieremiasProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Leah likes helping members reach their health goals. She also enjoys boxing and yoga.",
+      "specialty": "Internal medicine"
     },
     {
       "id": 8,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "erussel@doctors.com",
+      "display_name": "Ermes Russel, FNP",
+      "profile_image_name": "ERusselProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Ermes has focused on family medicine for 12 years. He loves navigating the challenges of aging.",
+      "specialty": "Family Medicine"
     },
     {
       "id": 9,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "fevelynn@doctors.com",
+      "display_name": "Fredo Evelynn, NP",
+      "profile_image_name": "FEvelynnProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Fredo enjoys motivating members to live their best lives. His passions outside of work include backpacking and basketball",
+      "specialty": "Internal medicine"
     },
     {
       "id": 10,
-      "email": "",
-      "display_name": "",
-      "profile_image_name": "",
+      "email": "smason@doctors.com",
+      "display_name": "Shila Mason, MD",
+      "profile_image_name": "SMasonProfile",
       "is_pcp": false,
-      "bio": "",
-      "specialty": ""
+      "bio": "Shila loves making a connection with patients through her therapy dog Rufus. Stop by if you're having a 'Ruff' day.",
+      "specialty": "Internal medicine"
     },
     {
       "id": 11,

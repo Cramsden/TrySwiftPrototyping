@@ -1,3 +1,4 @@
 target 'TrySwiftPrototype' do
   pod 'Alamofire'
+  pod 'Charts'
 end

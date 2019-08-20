@@ -22,6 +22,7 @@ struct ContentView: View {
                         .foregroundColor(.secondary)
                 }
             }
+
             .onAppear(perform: { self.store.fetch() })
             .navigationBarTitle(Text("Labs"))
         }

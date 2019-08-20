@@ -12,12 +12,14 @@ enum Router: URLRequestConvertible {
     case listProviders
     case listLabs
     case listOffices
+    case listRiskScores
 
     static var baseURL: URL!
 
     var method: HTTPMethod {
         switch self {
-        case .listLabs, .listOffices, .listProviders:
+        case .listLabs, .listOffices, .listProviders,
+             .listRiskScores:
             return .get
         }
     }
@@ -30,6 +32,8 @@ enum Router: URLRequestConvertible {
             return "/labs"
         case .listOffices:
             return "/offices"
+        case .listRiskScores:
+            return "/riskScores"
         }
     }
 

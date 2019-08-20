@@ -42,4 +42,15 @@ app.get('/offices', function (req, res) {
   });
 });
 
+app.get('/riskScores', function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  fs.readFile(__dirname + '/data/risk_scores.json', function (err, data) {
+    if (err) {
+      throw err
+    }
+    res.write(data.toString())
+    res.end();
+  });
+});
+
 app.listen(8000);

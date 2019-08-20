@@ -16,6 +16,7 @@
 		68689C5E2308E4870052AB0A /* TrySwiftPrototype2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689C5D2308E4870052AB0A /* TrySwiftPrototype2Tests.swift */; };
 		68689C692308E4870052AB0A /* TrySwiftPrototype2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689C682308E4870052AB0A /* TrySwiftPrototype2UITests.swift */; };
 		68689C782308E4B20052AB0A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689C772308E4B20052AB0A /* NetworkManager.swift */; };
+		68A59DBF230CA07800CC0270 /* RiskScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A59DBE230CA07800CC0270 /* RiskScore.swift */; };
 		68AF46C92308E575004810D0 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF46C82308E575004810D0 /* Provider.swift */; };
 		68AF46CB2308E583004810D0 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF46CA2308E583004810D0 /* Office.swift */; };
 		68AF46CD2308E59A004810D0 /* LabResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF46CC2308E59A004810D0 /* LabResult.swift */; };
@@ -58,6 +59,7 @@
 		68689C682308E4870052AB0A /* TrySwiftPrototype2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySwiftPrototype2UITests.swift; sourceTree = "<group>"; };
 		68689C6A2308E4870052AB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68689C772308E4B20052AB0A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		68A59DBE230CA07800CC0270 /* RiskScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskScore.swift; sourceTree = "<group>"; };
 		68AF46C82308E575004810D0 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		68AF46CA2308E583004810D0 /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		68AF46CC2308E59A004810D0 /* LabResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabResult.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				68AF46CA2308E583004810D0 /* Office.swift */,
 				68AF46CC2308E59A004810D0 /* LabResult.swift */,
 				68AF46CE2308E5A1004810D0 /* Router.swift */,
+				68A59DBE230CA07800CC0270 /* RiskScore.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				68AF46CF2308E5A1004810D0 /* Router.swift in Sources */,
 				68689C782308E4B20052AB0A /* NetworkManager.swift in Sources */,
 				68AF46CD2308E59A004810D0 /* LabResult.swift in Sources */,
+				68A59DBF230CA07800CC0270 /* RiskScore.swift in Sources */,
 				68689C4B2308E4860052AB0A /* ViewController.swift in Sources */,
 				68689C472308E4860052AB0A /* AppDelegate.swift in Sources */,
 				68AF46CB2308E583004810D0 /* Office.swift in Sources */,

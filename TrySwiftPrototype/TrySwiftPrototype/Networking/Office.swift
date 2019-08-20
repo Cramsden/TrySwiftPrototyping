@@ -29,7 +29,7 @@ struct Office: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case phoneNumber = "phone_number"
+        case phoneNumber = "phone"
         case hours
         case labHours = "lab_hours"
         case directions

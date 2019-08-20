@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         networkManager.fetchOffices { (error, offices) in
             print(offices)
         }
+
+        networkManager.fetchRiskScores { (error, riskScores) in
+                print(riskScores)
+            }
         // Do any additional setup after loading the view.
     }
 

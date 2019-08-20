@@ -14,6 +14,7 @@ class DataStore: ObservableObject {
     @Published var providers: [Provider] = []
     @Published var offices: [Office] = []
     @Published var labResults: [LabResult] = []
+    @Published var riskScores: [RiskScore] = []
 
     lazy var networkManager: NetworkManager = {
         return NetworkManager()
@@ -30,6 +31,10 @@ class DataStore: ObservableObject {
 
         networkManager.fetchProviders { (error, providers) in
             self.providers = providers
+        }
+
+        networkManager.fetchRiskScores { (error, riskScores) in
+            self.riskScores = riskScores
         }
     }
 }

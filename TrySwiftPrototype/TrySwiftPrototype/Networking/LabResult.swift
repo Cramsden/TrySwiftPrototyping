@@ -22,6 +22,9 @@ struct LabResult: Codable, Identifiable {
     let title: String
     let collectedAt: Date
     let orderingProviderID: Int
+    let followUpNotes: [String]
+    let followUpLinks: [String]
+    let interpritation: String
     let panels: [Panel]
 
     enum CodingKeys: String, CodingKey {
@@ -30,13 +33,15 @@ struct LabResult: Codable, Identifiable {
         case title
         case collectedAt = "collected_at"
         case orderingProviderID = "ordering_provider_id"
+        case followUpNotes = "follow_up_notes"
+        case followUpLinks = "follow_up_links"
+        case interpritation
         case panels
       }
 }
 
 struct Panel: Codable {
     let name: String
-//    let description: String
     let measurements: [Measurement]
 }
 
@@ -44,19 +49,17 @@ struct Measurement: Codable {
     let name: String
     let referenceRange: ReferenceRange
     let value: Int
-    let interpritation: String
 
     enum CodingKeys: String, CodingKey {
         case name
         case referenceRange = "reference_range"
         case value
-        case interpritation
     }
 }
 
 struct ReferenceRange: Codable {
-    let minimum: Int
-    let maximum: Int
+    let minimum: Int?
+    let maximum: Int?
 
     enum CodingKeys: String, CodingKey {
         case minimum = "min"

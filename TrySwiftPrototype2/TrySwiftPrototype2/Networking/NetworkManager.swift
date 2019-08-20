@@ -45,6 +45,16 @@ class NetworkManager {
         }
     }
 
+    func fetchRiskScores(completion: @escaping (Error?, [RiskScore]) -> ()) {
+         makeCodableRequest(with: .listLabs, ofType: RiskScoresOutput.self) { (error, riskScoresOutput) in
+            if let error = error {
+                completion(error, [])
+            } else {
+                completion(nil, riskScoresOutput?.riskScores ?? [])
+            }
+        }
+    }
+
     private func makeCodableRequest<T: Codable>(with route: Router, ofType type: T.Type, completion: @escaping (Error?, T?) -> ()) {
         Alamofire.request(route).validate().responseData { dataResponse in
             switch dataResponse.result {

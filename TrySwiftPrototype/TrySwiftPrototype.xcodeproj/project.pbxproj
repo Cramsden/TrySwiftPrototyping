@@ -21,6 +21,7 @@
 		681B2C6C23088E32009098F8 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B2C6B23088E32009098F8 /* Office.swift */; };
 		681B2C6E23088E42009098F8 /* LabResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B2C6D23088E42009098F8 /* LabResult.swift */; };
 		68689C38230893670052AB0A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689C37230893670052AB0A /* Router.swift */; };
+		68A59DBD230C9BF500CC0270 /* RiskScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A59DBC230C9BF500CC0270 /* RiskScore.swift */; };
 		68AF46D12308E8CC004810D0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF46D02308E8CC004810D0 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		681B2C6B23088E32009098F8 /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		681B2C6D23088E42009098F8 /* LabResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabResult.swift; sourceTree = "<group>"; };
 		68689C37230893670052AB0A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		68A59DBC230C9BF500CC0270 /* RiskScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskScore.swift; sourceTree = "<group>"; };
 		68AF46D02308E8CC004810D0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 				681B2C6B23088E32009098F8 /* Office.swift */,
 				681B2C6D23088E42009098F8 /* LabResult.swift */,
 				68689C37230893670052AB0A /* Router.swift */,
+				68A59DBC230C9BF500CC0270 /* RiskScore.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				681B2C6A23088E28009098F8 /* Provider.swift in Sources */,
 				68AF46D12308E8CC004810D0 /* DataStore.swift in Sources */,
 				681B2C3C23088715009098F8 /* ContentView.swift in Sources */,
+				68A59DBD230C9BF500CC0270 /* RiskScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

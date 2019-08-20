@@ -1,5 +1,22 @@
-# TrySwiftWorkshop
+# try! Swift — Technology Experience Prototyping
+Facilitators: Carson Ramsden & Mark Stuenkel
+
 This respository will serve as a start for prototyping if you would like to leverage an already configured data layer. You should also feel free to build out your prototype using any API avaliable if you would rather.
+
+## Setup
+### Server
+We are using a simple npm server to serve up `JSON`. To use:
+- `cd server`
+- `npm start`
+
+### Xcode projects
+There are 2 avaliable Xcode projects:
+- TrySwiftPrototype: A project using **SwiftUI**
+- TrySwiftPrototype2: A project using **UIKit**
+
+On the master branch you should find a barebones app in which the networking layer has already been built out and the data is being stored in codable objects that represent these api objects. 
+
+We also went through and built a prototype based on this use case. If you are looking for more insperation feel free to check out `prototype_done` for our final product!
 
 ## API Summary
 `/labs`: Provides a list of labs associated with your target personna. This patient has been monitoring elevated cholesterol for a while now and recently recieved a lab that indicated a spike. An example lab response is:
@@ -40,18 +57,3 @@ This respository will serve as a start for prototyping if you would like to leve
       "image_url_large": "https://s3.amazonaws.com/www.onemedical.com/images/nyc-489fifth-large.jpg"
     }
   ```
-
-## Setup
-### Server
-We are using a simple npm server to serve up `JSON`. To use:
-- `cd server`
-- `npm start`
-
-### Xcode projects
-There are 2 avaliable Xcode projects:
-- TrySwiftPrototype: A project using SwiftUI
-- TrySwiftPrototype2: A project using UIKit
-
-On the master branch you should find a barebones app in which the networking layer has already been built out and the data is being stored in codable objects that represent these api objects. 
-
-We also went through and built a prototype based on this use case. If you are looking for more insperation feel free to check out `prototype_done` for our final product!

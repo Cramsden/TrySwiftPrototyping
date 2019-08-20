@@ -12,7 +12,19 @@ struct ContentView: View {
     @ObservedObject var store: DataStore
 
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List(store.labResults) { labResult in
+                VStack(alignment: .leading) {
+                    Text(labResult.title)
+                        .font(.headline)
+                    Text(labResult.status)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .onAppear(perform: { self.store.fetch() })
+            .navigationBarTitle(Text("Labs"))
+        }
     }
 }
 

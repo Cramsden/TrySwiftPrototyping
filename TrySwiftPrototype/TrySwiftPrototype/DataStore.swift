@@ -10,13 +10,16 @@ import Foundation
 import SwiftUI
 import Combine
 
-final class DataStore: ObservableObject {
+class DataStore: ObservableObject {
     @Published var providers: [Provider] = []
     @Published var offices: [Office] = []
     @Published var labResults: [LabResult] = []
 
+    lazy var networkManager: NetworkManager = {
+        return NetworkManager()
+    }()
+
     func fetch() {
-        let networkManager = NetworkManager()
         networkManager.fetchLabs { (error, labResults) in
             self.labResults = labResults
         }

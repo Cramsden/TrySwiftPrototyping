@@ -1,26 +1,6 @@
 {
   "offices": [
-    {
-      "id": 6,
-      "permalink": "489fifth",
-      "name": "Midtown - 42nd St",
-      "phone": "212-441-4400",
-      "hours": "Mon - Fri: 8am - 7pm",
-      "lab_hours": "Mon - Fri: 8am - 5:30pm<br>RN/Vaccine Walk-in Hours: all ages,<br>Mon, Tue, Thur, Fri: 9am - 12pm",
-      "title": "Midtown – 42nd St",
-      "directions": "<h4>Public Transportation</h4><h5>Nearby Subway Stations</h5><ul>  <li>B, D, F, M, 7 to Bryant Park</li>  <li>4, 5, 6 to Grand Central</li>  <li>1, 2, 3 to Time Square</li></ul><a href=\"http://www.mta.info/\" target=\"_blank\" rel=\"external nofollow\">NYC MTA Home Page</a><h4>Additional Information</h4><p>  Our Midtown - 42nd Street office is at 489 Fifth Avenue, across the street from Bryant Park and the New York Public Library. Our doctor's office is also directly next to Orvis Clothing Store. </p><p>Unfortunately, bikes are not allowed inside the building at this time.</p>",
-      "map_link": "https://www.google.com/maps/place/489+5th+Ave,+New+York,+NY+10017/@40.7531364,-73.9830508,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2590045cfd5dd:0x6f00d1e5bb20dd82",
-      "email_account": "489fifth",
-      "address1": "489 5th Avenue",
-      "address2": "3rd Floor",
-      "city": "New York",
-      "state": "NY",
-      "zip": "10017",
-      "latitude": 40.753132,
-      "longitude": -73.980862,
-      "image_url_small": "https://s3.amazonaws.com/www.onemedical.com/images/nyc-489fifth-doctors-office.jpg",
-      "image_url_large": "https://s3.amazonaws.com/www.onemedical.com/images/nyc-489fifth-large.jpg"
-    },
+ ,
     {
       "id": 7,
       "permalink": "30broad",

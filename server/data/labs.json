@@ -6,6 +6,7 @@
       "status": "Pending",
       "title": "CBC Panel",
       "collected_at": "2019-08-16T23:30:09Z",
+      "ordering_provider_id": 1,
       "panels": [
         {
           "name": "CBC",
@@ -81,6 +82,7 @@
       "status": "Pending",
       "title": "CBC Panel",
       "collected_at": "2019-08-16T23:30:09Z",
+      "ordering_provider_id": 5,
       "panels": [
         {
           "name": "CBC",
@@ -153,6 +155,7 @@
       "status": "Pending",
       "title": "CBC Panel",
       "collected_at": "2019-08-16T23:30:09Z",
+      "ordering_provider_id": 5,
       "panels": [
         {
           "name": "CBC",

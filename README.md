@@ -1,7 +1,10 @@
 # try! Swift — Technology Experience Prototyping
 Facilitators: Carson Ramsden & Mark Stuenkel
 
-This respository will serve as a start for prototyping if you would like to leverage an already configured data layer. You should also feel free to build out your prototype using any API avaliable if you would rather.
+Feel free to use these xcode projects as a start if you want! There are two avaliable Xcode projects with an already configured data layer. Feel free to build out your prototype using any API avaliable if you would rather.
+
+## Other potential API Resources
+https://www.programmableweb.com/category/all/apis
 
 ## Setup
 ### Server

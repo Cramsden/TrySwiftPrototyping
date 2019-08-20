@@ -33,14 +33,14 @@
       "display_name": "Kishor Maya, NP",
       "profile_image_name": "KMayaProfile",
       "is_pcp": false,
-      "bio": "Kishor recently moved from San Francsico to New York and has enjoyed his time in the city eating amazing food. Also, he has practiced medicine in 4 countries.",
+      "bio": "Kishor has practiced medicine in 4 different states and recently moved from San Francsico. He enjoys eating amazing food and hiking.",
       "specialty": "Internal Medicine"
     },
     {
       "id": 5,
       "email": "mmorton@doctors.com",
       "display_name": "Moses Morton, FNP",
-      "profile_image_name": "MMMortonProfile",
+      "profile_image_name": "MMortonProfile",
       "is_pcp": false,
       "bio": "Moses is passionate about providing women with the support and information they need to make the best decisions for themselves.",
       "specialty": "Women's Health"
@@ -48,8 +48,8 @@
     {
       "id": 6,
       "email": "sognena@doctors.com",
-      "display_name": "Sergio Ognena",
-      "profile_image_name": "SOgnenaProfile, NP",
+      "display_name": "Sergio Ognena, NP",
+      "profile_image_name": "SOgnenaProfile",
       "is_pcp": false,
       "bio": "Sergio has a knack understanding unique needs of childerens as they grow. Outside of work he enjoys movies from the 80's",
       "specialty": "Pediatrics"

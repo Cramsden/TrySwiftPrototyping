@@ -10,7 +10,7 @@ struct ProviderOutput: Codable {
     let providers: [Provider]
 }
 
-struct Provider: Codable, Identifiable {
+struct Provider: Hashable, Codable, Identifiable {
     let id: Int
     let displayName: String
     let profileImageName: String

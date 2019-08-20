@@ -15,7 +15,7 @@ struct RiskScoresOutput: Codable {
     }
 }
 
-struct RiskScore: Codable, Identifiable {
+struct RiskScore: Hashable,  Codable, Identifiable {
     let id: Int
     let labID: Int
     let riskScore: Int

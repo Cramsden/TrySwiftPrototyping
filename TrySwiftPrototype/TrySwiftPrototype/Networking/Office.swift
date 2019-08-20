@@ -10,7 +10,7 @@ struct OfficeOutput: Codable {
     let offices: [Office]
 }
 
-struct Office: Codable, Identifiable {
+struct Office: Hashable, Codable, Identifiable {
     let id: Int
     let name: String
     let phoneNumber: String

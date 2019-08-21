@@ -21,17 +21,45 @@ class DataStore: ObservableObject {
     }()
 
     func fetch() {
-        networkManager.fetchLabs { (error, labResults) in
+        let publisher = NM().fetchProviders()
+        _ = publisher.sink(receiveCompletion: { completion in
+                switch completion {
+                    case .finished:
+                        print("finished")
+                        break
+                    case .failure(let anError):
+                        print("received error: ", anError)
+                }
+        }, receiveValue: { providers in
+            print(providers)
+            self.providers = providers
+        })
+
+        let labPub = NM().fetchLabs()
+        _ = labPub.sink(receiveCompletion: { completion in
+                switch completion {
+                    case .finished:
+                        print("finished")
+                        break
+                    case .failure(let anError):
+                        print("received error: ", anError)
+                }
+        }, receiveValue: { labResults in
+            print(labResults)
             self.labResults = labResults
-        }
+        })
+
+//        networkManager.fetchLabs { (error, labResults) in
+//            self.labResults = labResults
+//        }
 
         networkManager.fetchOffices { (error, offices) in
             self.offices = offices
         }
 
-        networkManager.fetchProviders { (error, providers) in
-            self.providers = providers
-        }
+//        networkManager.fetchProviders { (error, providers) in
+//            self.providers = providers
+//        }
 
         networkManager.fetchRiskScores { (error, riskScores) in
             self.riskScores = riskScores

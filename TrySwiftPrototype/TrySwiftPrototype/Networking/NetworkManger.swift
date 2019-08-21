@@ -8,6 +8,48 @@
 
 import Foundation
 import Alamofire
+import Combine
+
+enum NetworkingError: LocalizedError {
+    case other
+}
+
+struct NM {
+    let session = URLSession.shared
+    let decoder = CustomJSONDecoder()
+
+    init() {
+        Router.baseURL = URL(string: "http://localhost:8000")
+    }
+
+    func fetchProviders() -> AnyPublisher<[Provider], Error> {
+        return session.dataTaskPublisher(for: Router.listProviders.urlRequest!).map {
+            print($0.response)
+            return $0.data
+        }.decode(type: ProviderOutput.self, decoder: decoder).map {
+            print("in herrree")
+            return $0.providers
+        }.mapError {
+            print("error \($0.localizedDescription)")
+            return $0
+        }
+        .eraseToAnyPublisher()
+    }
+
+    func fetchLabs() -> AnyPublisher<[LabResult], Error> {
+        return session.dataTaskPublisher(for: Router.listLabs.urlRequest!).map {
+            print($0.response)
+            return $0.data
+        }.decode(type: LabResultOutput.self, decoder: decoder).map {
+            print("in herrree")
+            return $0.labResults
+        }.mapError {
+            print("error \($0.localizedDescription)")
+            return $0
+        }
+        .eraseToAnyPublisher()
+    }
+}
 
 class NetworkManager {
 

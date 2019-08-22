@@ -8,23 +8,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LabsListView: View {
     @EnvironmentObject private var store: DataStore
 
     var body: some View {
         NavigationView {
-            List(store.labResults) { labResult in
-                VStack(alignment: .leading) {
-                    Text(labResult.title)
-                        .font(.headline)
-                    Text(labResult.status)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-            }
 
+            List(store.labResults) { labResult in
+                NavigationLink(destination: LabDetail(labResult: labResult, riskScore: self.store.riskScore(for: labResult), provider: self.store.orderingProvider(on: labResult))) {
+                    LabRow(labResult: labResult)
+                }
+            }.listStyle(GroupedListStyle())
             .onAppear(perform: { self.store.fetch() })
-            .navigationBarTitle(Text("Labs"))
+            .navigationBarTitle(Text("Lab Results"))
         }
     }
 }

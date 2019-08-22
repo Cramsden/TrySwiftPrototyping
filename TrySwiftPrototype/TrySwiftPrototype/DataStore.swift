@@ -20,31 +20,49 @@ class DataStore: ObservableObject {
         return NetworkManager()
     }()
 
+    private var providerPublisher: AnyCancellable?
+    private var labPublisher: AnyPublisher<[LabResult], Error>?
+    private var officePublisher: AnyCancellable?
+    private var riskScorePublisher: AnyPublisher<[RiskScore], Error>?
+    private var combinedLabPublishers: AnyCancellable?
+
     func fetch() {
-        networkManager.fetchLabs { (error, labResults) in
-            self.labResults = labResults
-        }
+        providerPublisher = networkManager.fetchProviders().receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let anError):
+                    print("received error: ", anError)
+                }
+            }, receiveValue: { providers in
+                self.providers = providers
+            })
 
-        networkManager.fetchOffices { (error, offices) in
+        labPublisher = networkManager.fetchLabs()
+        riskScorePublisher =  networkManager.fetchRiskScores()
+
+        combinedLabPublishers = Publishers.Zip(labPublisher!, riskScorePublisher!).receive(on: DispatchQueue.main).sink(receiveCompletion: { completion in
+            switch completion {
+            case .finished:
+                break
+            case .failure(let anError):
+                print("received error: ", anError)
+            }
+        }, receiveValue: { results in
+            self.labResults = results.0
+            self.riskScores = results.1
+        })
+
+        officePublisher = networkManager.fetchOffices().receive(on: DispatchQueue.main).sink(receiveCompletion: { completion in
+            switch completion {
+            case .finished:
+                break
+            case .failure(let anError):
+                print("received error: ", anError)
+            }
+        }, receiveValue: { offices in
             self.offices = offices
-        }
-
-        networkManager.fetchProviders { (error, providers) in
-            self.providers = providers
-        }
-
-        networkManager.fetchRiskScores { (error, riskScores) in
-            self.riskScores = riskScores
-        }
-
-
-    }
-
-    func riskScore(for lab: LabResult) -> RiskScore? {
-        return riskScores.filter { $0.labID == lab.id }.first
-    }
-
-    func orderingProvider(on lab: LabResult) -> Provider? {
-        return providers.filter { $0.id == lab.orderingProviderID }.first
+        })
     }
 }

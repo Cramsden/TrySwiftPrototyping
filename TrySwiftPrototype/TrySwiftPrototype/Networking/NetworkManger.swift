@@ -8,75 +8,52 @@
 
 import Foundation
 import Alamofire
+import Combine
 
-class NetworkManager {
+enum NetworkingError: LocalizedError {
+    case other
+}
+
+struct NetworkManager {
+    let session = URLSession.shared
+    let decoder = CustomJSONDecoder()
 
     init() {
         Router.baseURL = URL(string: "http://localhost:8000")
     }
 
-    func fetchProviders(completion: @escaping (Error?, [Provider]) -> ()) {
-        makeCodableRequest(with: .listProviders, ofType: ProviderOutput.self) { (error, providerOutput) in
-            if let error = error {
-                completion(error, [])
-            } else {
-                completion(nil, providerOutput?.providers ?? [])
-            }
-        }
+    func fetchProviders() -> AnyPublisher<[Provider], Error> {
+        return session.dataTaskPublisher(for: Router.listProviders.urlRequest!).map {
+            return $0.data
+        }.decode(type: ProviderOutput.self, decoder: decoder).map {
+            return $0.providers
+        }.eraseToAnyPublisher()
     }
 
-    func fetchOffices(completion: @escaping (Error?, [Office]) -> ()) {
-        makeCodableRequest(with: .listOffices, ofType: OfficeOutput.self) { (error, officeOutput) in
-            if let error = error {
-                completion(error, [])
-            } else {
-                completion(nil, officeOutput?.offices ?? [])
-            }
-        }
+    func fetchLabs() -> AnyPublisher<[LabResult], Error> {
+        return session.dataTaskPublisher(for: Router.listLabs.urlRequest!).map {
+            return $0.data
+        }.decode(type: LabResultOutput.self, decoder: decoder).map {
+            return $0.labResults
+        }.eraseToAnyPublisher()
     }
 
-    func fetchLabs(completion: @escaping (Error?, [LabResult]) -> ()) {
-         makeCodableRequest(with: .listLabs, ofType: LabResultOutput.self) { (error, labResultsOutput) in
-            if let error = error {
-                completion(error, [])
-            } else {
-                completion(nil, labResultsOutput?.labResults ?? [])
-            }
-        }
+    func fetchOffices() -> AnyPublisher<[Office], Error> {
+        return session.dataTaskPublisher(for: Router.listOffices.urlRequest!).map {
+            return $0.data
+        }.decode(type: OfficeOutput.self, decoder: decoder).map {
+            return $0.offices
+        }.eraseToAnyPublisher()
     }
 
-    func fetchRiskScores(completion: @escaping (Error?, [RiskScore]) -> ()) {
-         makeCodableRequest(with: .listRiskScores, ofType: RiskScoresOutput.self) { (error, riskScoresOutput) in
-            if let error = error {
-                completion(error, [])
-            } else {
-                completion(nil, riskScoresOutput?.riskScores ?? [])
-            }
-        }
-    }
-
-    private func makeCodableRequest<T: Codable>(with route: Router, ofType type: T.Type, completion: @escaping (Error?, T?) -> ()) {
-        Alamofire.request(route).validate().responseData { dataResponse in
-            switch dataResponse.result {
-            case .success:
-                do {
-                    guard let result = dataResponse.result.value else {
-                        completion(nil, nil)
-                        return
-                    }
-
-                    let output = try  CustomJSONDecoder().decode(T.self, from: result)
-                    completion(nil, output)
-                } catch {
-                    completion(error, nil)
-                }
-            case .failure(let error):
-                completion(error, nil)
-            }
-        }
+    func fetchRiskScores() -> AnyPublisher<[RiskScore], Error> {
+        return session.dataTaskPublisher(for: Router.listRiskScores.urlRequest!).map {
+            return $0.data
+        }.decode(type: RiskScoresOutput.self, decoder: decoder).map {
+            return $0.riskScores
+        }.eraseToAnyPublisher()
     }
 }
-
 
 class CustomJSONDecoder: JSONDecoder {
     override init() {

@@ -22,6 +22,7 @@ struct LabResult: Codable, Identifiable {
     let title: String
     let collectedAt: Date
     let orderingProviderID: Int
+    let isFlagged: Bool
     let followUpNotes: [String]
     let followUpLinks: [String]
     let interpritation: String
@@ -33,6 +34,7 @@ struct LabResult: Codable, Identifiable {
         case title
         case collectedAt = "collected_at"
         case orderingProviderID = "ordering_provider_id"
+        case isFlagged = "is_flagged"
         case followUpNotes = "follow_up_notes"
         case followUpLinks = "follow_up_links"
         case interpritation

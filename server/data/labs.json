@@ -9,6 +9,7 @@
       "follow_up_notes": ["Keep up with diet and exercise we discussed."],
       "follow_up_links": [],
       "interpritation": "Noticed your cholesterol measurements are on the higher end of the range this time around but risk score is still low.",
+      "is_flagged": false,
       "panels": [
         {
           "name": "Cholesterol Panel",
@@ -65,6 +66,7 @@
       "follow_up_notes": ["Bump exercise to 3x times per week", "Limit unhealthy fats, I'd give the mediteranian diet a chance."],
       "follow_up_links": ["https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/mediterranean-diet"],
       "interpritation": "These measurements for cholesterol are a little above the expected reference range but it is nothing to be too concerned about given your current risk score. We should keep an eye on this to get back on a downward trend.",
+      "is_flagged": true,
       "panels": [
         {
           "name": "Cholesterol Panel",
@@ -121,6 +123,7 @@
       "follow_up_notes": ["Keep exercising and eating well!"],
       "follow_up_links": [],
       "interpritation": "Great work, looks like the diet and exersize has been paying off!",
+      "is_flagged": false,
       "panels": [
         {
           "name": "Cholesterol Panel",
@@ -177,6 +180,7 @@
       "follow_up_notes": ["Cut back alcohol intake to 2x times per week.", "We will montior cholesterol more closely with a follow up panel in a couple months."],
       "follow_up_links": ["https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/alcohol-and-heart-health"],
       "interpritation": "Your levels on this panel are a bit elevated and due to your age and blood pressure they have signficantly bumped your risk score. We are still within normal ranges and don't need to talk about mediciation right now but I would like to follow up in a couple months to verify things are trending down.",
+      "is_flagged": true,
       "panels": [
         {
           "name": "Cholesterol Panel",
@@ -233,6 +237,7 @@
       "follow_up_notes": ["Start on standard dose of Statin.", "Continue to monitor diet, exercise and alcohol consumption", "We will keep monitoring levels and adjust medicaiton as needed. I have attached some documentation on the medication. If you have any questions or concerns please get in touch."],
       "follow_up_links": ["https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772"],
       "interpritation": "This most recent lab has shown an increase in your cholesterol levels which has increased your risk score to a relatively high level. I think it is time we took in to consideration adding medication to help moderate these levels along with diet and exercise and limited alcohol consumption",
+      "is_flagged": true,
       "panels": [
         {
           "name": "Cholesterol Panel",

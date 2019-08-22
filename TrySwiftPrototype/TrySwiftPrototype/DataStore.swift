@@ -36,5 +36,15 @@ class DataStore: ObservableObject {
         networkManager.fetchRiskScores { (error, riskScores) in
             self.riskScores = riskScores
         }
+
+
+    }
+
+    func riskScore(for lab: LabResult) -> RiskScore? {
+        return riskScores.filter { $0.labID == lab.id }.first
+    }
+
+    func orderingProvider(on lab: LabResult) -> Provider? {
+        return providers.filter { $0.id == lab.orderingProviderID }.first
     }
 }

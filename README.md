@@ -8,6 +8,13 @@ https://www.programmableweb.com/category/all/apis
 
 ## Setup
 ### Server
+#### Getting Setup with NPM
+- If you don't have homebrew get it with this: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- if you don't have node/npm:
+  - `brew update`
+  - `brew install node`
+
+#### Running Server
 We are using a simple npm server to serve up `JSON`. To use:
 - `cd server`
 - `npm start`
@@ -15,7 +22,9 @@ We are using a simple npm server to serve up `JSON`. To use:
 ### Xcode projects
 There are 2 avaliable Xcode projects:
 - TrySwiftPrototype: A project using **SwiftUI**
+  - Minimum compatability is Xcode 11 beta 5 (Let me know if you need the beta!)
 - TrySwiftPrototype2: A project using **UIKit**
+  - Minimum compatability is Xcode 10.2
 
 On the master branch you should find a barebones app in which the networking layer has already been built out and the data is being stored in codable objects that represent these api objects. 
 
@@ -80,6 +89,16 @@ We also went through and built a prototype based on this use case. If you are lo
           ]
         }
       ]
+    }
+```
+
+`/riskScores`: Provides a list of risk scores associated with labs with cholesterol panels. The ACSVD risk (risk of heart attack or stroke) score is the value that the provider actually uses to determine if cholestorol measurements are not withen an acceptable range. There are many available risk calculators but this is one we [liked]( https://statindecisionaid.mayoclinic.org). An example risk score response is:
+```
+    {
+      "id": 4,
+      "lab_id": 4,
+      "risk_score": 14,
+      "with_medicaiton": 9
     }
 ```
 

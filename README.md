@@ -118,7 +118,6 @@ We also went through and built a prototype based on this use case. If you are lo
   ```
       {
       "id": 6,
-      "permalink": "489fifth",
       "name": "Midtown - 42nd St",
       "phone": "212-441-4400",
       "hours": "Mon - Fri: 8am - 7pm",

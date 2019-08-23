@@ -23,6 +23,65 @@ We also went through and built a prototype based on this use case. If you are lo
 
 ## API Summary
 `/labs`: Provides a list of labs associated with your target personna. This patient has been monitoring elevated cholesterol for a while now and recently recieved a lab that indicated a spike. An example lab response is:
+```
+  {
+      "id": 5,
+      "status": "Reviewed",
+      "title": "Cholesterol Panel",
+      "collected_at": "2018-07-16T23:30:09Z",
+      "ordering_provider_id": 1,
+      "follow_up_notes": ["Start on standard dose of Statin.", "Continue to monitor diet, exercise and alcohol consumption", "We will keep monitoring levels and adjust medicaiton as needed. I have attached some documentation on the medication. If you have any questions or concerns please get in touch."],
+      "follow_up_links": ["https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772"],
+      "interpritation": "This most recent lab has shown an increase in your cholesterol levels which has increased your risk score to a relatively high level. I think it is time we took in to consideration adding medication to help moderate these levels along with diet and exercise and limited alcohol consumption",
+      "is_flagged": true,
+      "panels": [
+        {
+          "name": "Cholesterol Panel",
+          "measurements": [
+            {
+              "name": "Total Cholesterol",
+              "reference_range": {
+                "min": 100,
+                "max": 199
+              },
+              "value" : 300
+            },
+            {
+              "name": "LDL",
+              "reference_range": {
+                "min": 0,
+                "max": 99
+              },
+              "value" : 190
+            },
+            {
+              "name": "HDL",
+              "reference_range": {
+                "min": 40
+              },
+              "value" : 45
+            },
+            {
+              "name": "Triglycerides",
+              "reference_range": {
+                "min": 0,
+                "max": 150
+              },
+              "value" : 190
+            },
+            {
+              "name": "VLDL",
+              "reference_range": {
+                "min": 5,
+                "max": 40
+              },
+              "value" : 55
+            }
+          ]
+        }
+      ]
+    }
+```
 
 `/providers`: Provides a list of doctors who can be associated with particular labs. An example provider response is:
 ```    

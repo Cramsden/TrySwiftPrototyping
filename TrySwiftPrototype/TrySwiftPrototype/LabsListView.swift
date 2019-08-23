@@ -15,7 +15,7 @@ struct LabsListView: View {
         NavigationView {
 
             List(store.labResults) { labResult in
-                NavigationLink(destination: LabDetail(labResult: labResult, riskScore: self.store.riskScore(for: labResult), provider: self.store.orderingProvider(on: labResult))) {
+                NavigationLink(destination: LabDetail(labResult: labResult, riskScore: self.store.riskScore(for: labResult), riskScores: self.store.riskScores, provider: self.store.orderingProvider(on: labResult))) {
                     LabRow(labResult: labResult)
                 }
             }.listStyle(GroupedListStyle())

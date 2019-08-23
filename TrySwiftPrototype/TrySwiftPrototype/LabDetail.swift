@@ -11,13 +11,14 @@ import SwiftUI
 struct LabDetail: View {
     var labResult: LabResult
     var riskScore: RiskScore?
+    var riskScores: [RiskScore]
     var provider: Provider?
 
     var body: some View {
         VStack(alignment: .leading) {
             Text(labResult.title).font(.title)
             if riskScore != nil {
-                RiskScoreView(riskScore: riskScore!, isFlagged: labResult.isFlagged).frame(width: 370, height: 80, alignment: .center).border(Color.gray, width: 1)
+                RiskScoreView(labResult: labResult, riskScore: riskScore!, otherRiskScores: riskScores, isFlagged: labResult.isFlagged).frame(width: 370, height: 80, alignment: .center).border(Color.gray, width: 1)
             }
             if provider != nil {
                 ProviderMessageView(provider: provider!, message: labResult.interpritation).layoutPriority(10).padding(.top).padding(.bottom)

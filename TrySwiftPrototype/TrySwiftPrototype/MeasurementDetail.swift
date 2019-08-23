@@ -9,15 +9,23 @@
 import SwiftUI
 
 struct MeasurementDetail: View {
+    var riskScores: [RiskScore]
+    var labResult: LabResult
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text(labResult.title).font(.title)
+            Text("Based on Results, ACSVD Standards and personalized risk factors.").font(.body)
+            LabChartView(riskScores: riskScores)
+            Spacer()
+        }.padding()
     }
 }
 
 #if DEBUG
-struct MeasurementDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        MeasurementDetail()
-    }
-}
+//struct MeasurementDetail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MeasurementDetail()
+//    }
+//}
 #endif

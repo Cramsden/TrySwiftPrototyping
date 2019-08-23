@@ -21,10 +21,11 @@ struct ProviderMessageView: View {
 
                 }) {
                     Text("Send Message")
-                    .lineLimit(1)
+                        .lineLimit(1)
                         .foregroundColor(.white)
-                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
-                        .background(Color.purple)
+                        .padding(EdgeInsets(top: 10, leading: 30, bottom: 10, trailing: 30))
+                        .background(Color.customPurple)
+                        .cornerRadius(5)
                 }
             }
         }

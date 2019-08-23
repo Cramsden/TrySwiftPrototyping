@@ -12,4 +12,8 @@ extension Color {
     static var customGray: Color {
         return Color(red: 78/226, green: 78/226, blue: 86/226)
     }
+
+    static var customPurple: Color {
+        return Color(red: 104/226, green: 96/226, blue: 172/226)
+    }
 }

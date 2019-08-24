@@ -10,10 +10,13 @@ struct ProviderOutput: Codable {
     let providers: [Provider]
 }
 
+// Codable object representing a Doctor who provides care to this user
 struct Provider: Codable, Identifiable {
     let id: Int
     let displayName: String
+     // This name maps to an image name in the assets folder
     let profileImageName: String
+    // Is primary care provider (is primary doctor)
     let isPCP: Bool
     let bio: String
     let specialty: String

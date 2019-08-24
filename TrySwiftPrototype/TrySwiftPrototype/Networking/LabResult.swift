@@ -16,15 +16,21 @@ struct LabResultOutput: Codable {
     }
 }
 
+// Codable object representing a lab result for a user, a lab result will have a list of panels that were ordered and each panel will have some number of measurements.
 struct LabResult: Codable, Identifiable {
     let id: Int
+    // The current status of the lab Uncollected, Pending, Under Review, Reviewed
     let status: String
     let title: String
     let collectedAt: Date
     let orderingProviderID: Int
+    // The provider has the ability to flag a lab if the results are concerning or they would like the user to follow up on them
     let isFlagged: Bool
+    // Follow up steps
     let followUpNotes: [String]
+    // Links for information that the provider would like to share
     let followUpLinks: [String]
+    // Provider's interpretation and message to patient
     let interpritation: String
     let panels: [Panel]
 
@@ -49,6 +55,7 @@ struct Panel: Codable {
 
 struct Measurement: Codable {
     let name: String
+    // The 'expected' range that this measurement should be in to be considered normal. These come from the labs and are usually very conservative
     let referenceRange: ReferenceRange
     let value: Int
 

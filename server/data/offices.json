@@ -2,7 +2,6 @@
   "offices": [
     {
       "id": 7,
-      "permalink": "30broad",
       "name": "Wall Street",
       "phone": "212-530-0630",
       "hours": "Mon - Fri: 8am - 7pm",
@@ -23,7 +22,6 @@
     },
     {
       "id": 9,
-      "permalink": "515madison",
       "name": "Midtown - E 53rd St",
       "phone": "212-530-0650",
       "hours": "Mon - Fri: 8am - 7pm",
@@ -44,7 +42,6 @@
     },
     {
       "id": 12,
-      "permalink": "408w14th",
       "name": "Meatpacking - W 14th St",
       "phone": "212-530-0639",
       "hours": "Mon - Fri: 8am - 7pm <br/>Sat: 9am - 6pm",
@@ -65,7 +62,6 @@
     },
     {
       "id": 16,
-      "permalink": "1790broadway",
       "name": "5 Columbus Circle",
       "phone": "212-530-0624",
       "hours": "Mon - Fri: 8am - 7pm",
@@ -86,7 +82,6 @@
     },
     {
       "id": 22,
-      "permalink": "35e21st",
       "name": "Flatiron",
       "phone": "212-530-0659",
       "hours": "Mon - Fri: 8am - 7pm",
@@ -107,7 +102,6 @@
     },
     {
       "id": 69,
-      "permalink": "tribeca",
       "name": "Tribeca",
       "phone": "212-441-4401",
       "hours": "Mon - Fri: 8am - 7pm <br/>Sat: 9am - 6pm",

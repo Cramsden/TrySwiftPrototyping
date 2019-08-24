@@ -16,6 +16,7 @@ struct LabResultOutput: Codable {
     }
 }
 
+// Codable object representing a lab result for a user, a lab result will have a list of panels that were ordered and each panel will have some number of measurements.
 struct LabResult: Codable, Identifiable {
     let id: Int
     let status: String

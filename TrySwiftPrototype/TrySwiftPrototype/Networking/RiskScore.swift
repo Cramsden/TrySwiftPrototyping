@@ -15,10 +15,13 @@ struct RiskScoresOutput: Codable {
     }
 }
 
+// Codable object representing the risk score of a specific lab
 struct RiskScore: Hashable,  Codable, Identifiable {
     let id: Int
     let labID: Int
+    // Calculated risk score based on patient's age, information, and their lab results
     let riskScore: Int
+    // Calculated new risk score if they were to start on a normal dose of Statin, a cholestorol lowering drug
     let riskScoreWithMeds: Int?
 
     enum CodingKeys: String, CodingKey {

@@ -10,6 +10,7 @@ struct OfficeOutput: Codable {
     let offices: [Office]
 }
 
+// Codable object representing a OneMedical office in the New York area
 struct Office: Codable, Identifiable {
     let id: Int
     let name: String

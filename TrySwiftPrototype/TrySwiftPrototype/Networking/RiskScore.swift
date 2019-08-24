@@ -28,6 +28,6 @@ struct RiskScore: Hashable,  Codable, Identifiable {
         case id
         case labID = "lab_id"
         case riskScore = "risk_score"
-        case riskScoreWithMeds = "with_medicaiton"
+        case riskScoreWithMeds = "with_medication"
     }
 }

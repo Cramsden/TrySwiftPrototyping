@@ -234,7 +234,7 @@
       "title": "Cholesterol Panel",
       "collected_at": "2018-07-16T23:30:09Z",
       "ordering_provider_id": 1,
-      "follow_up_notes": ["Start on standard dose of Statin.", "Continue to monitor diet, exercise and alcohol consumption", "We will keep monitoring levels and adjust medicaiton as needed. I have attached some documentation on the medication. If you have any questions or concerns please get in touch."],
+      "follow_up_notes": ["Start on standard dose of Statin.", "Continue to monitor diet, exercise and alcohol consumption", "We will keep monitoring levels and adjust medication as needed. I have attached some documentation on the medication. If you have any questions or concerns please get in touch."],
       "follow_up_links": ["https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772"],
       "interpritation": "This most recent lab has shown an increase in your cholesterol levels which has increased your risk score to a relatively high level. I think it is time we took in to consideration adding medication to help moderate these levels along with diet and exercise and limited alcohol consumption",
       "is_flagged": true,

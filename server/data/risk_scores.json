@@ -19,13 +19,13 @@
       "id": 4,
       "lab_id": 4,
       "risk_score": 14,
-      "with_medicaiton": 9
+      "with_medication": 9
     },
     {
       "id": 5,
       "lab_id": 5,
       "risk_score": 20,
-      "with_medicaiton": 15
+      "with_medication": 15
     }
   ]
 }

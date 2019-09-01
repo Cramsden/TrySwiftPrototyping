@@ -11,14 +11,24 @@ import SwiftUI
 struct MeasurementDetail: View {
     var riskScores: [RiskScore]
     var labResult: LabResult
+    var currentRiskScore: RiskScore
 
     var body: some View {
         VStack(alignment: .leading) {
             Text(labResult.title).font(.title)
-            Text("Based on Results, ACSVD Standards and personalized risk factors.").font(.body)
-            LabChartView(riskScores: riskScores)
+            Text("Based on Results, ACSVD Standards and personalized risk factors.").font(.body).foregroundColor(.customGray)
+            LabChartView(riskScores: riskScores).padding(.top)
+            ScrollView(.horizontal) {
+                HStack(alignment: .center) {
+                    RiskScoreCellView(headerTitle: "Current Risk Score", scoreValue: currentRiskScore.riskScore, backgroundColor: .red).fixedSize().cornerRadius(5)
+                    if currentRiskScore.riskScoreWithMeds != nil {
+                        RiskScoreCellView(headerTitle: "Goal", scoreValue: currentRiskScore.riskScoreWithMeds!, backgroundColor: .purple).fixedSize().cornerRadius(5)
+                    }
+                }
+            }
             Spacer()
         }.padding()
+            .navigationBarTitle("Measurements")
     }
 }
 

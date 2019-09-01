@@ -30,7 +30,7 @@ struct RiskScoreView: View {
                 }
             }
 
-            NavigationLink(destination: MeasurementDetail(riskScores: otherRiskScores, labResult: labResult)) {
+            NavigationLink(destination: MeasurementDetail(riskScores: otherRiskScores, labResult: labResult, currentRiskScore: riskScore)) {
                 Image("DisclosureIndicator").frame(width: 10, height: 60, alignment: .center)
             }.accentColor(.gray)
         }.padding()

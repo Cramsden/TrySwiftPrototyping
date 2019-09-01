@@ -32,6 +32,7 @@
 		68A59DBD230C9BF500CC0270 /* RiskScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A59DBC230C9BF500CC0270 /* RiskScore.swift */; };
 		68AF46D12308E8CC004810D0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF46D02308E8CC004810D0 /* DataStore.swift */; };
 		68F7128323104EFC003CFB1B /* LabChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F7128223104EFC003CFB1B /* LabChartView.swift */; };
+		68F87D5F231C132E000C1FC9 /* RiskScoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F87D5E231C132E000C1FC9 /* RiskScoreCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		68A59DBC230C9BF500CC0270 /* RiskScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskScore.swift; sourceTree = "<group>"; };
 		68AF46D02308E8CC004810D0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		68F7128223104EFC003CFB1B /* LabChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabChartView.swift; sourceTree = "<group>"; };
+		68F87D5E231C132E000C1FC9 /* RiskScoreCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskScoreCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				683D1397230EF1E200B295D6 /* Color+Extention.swift */,
 				683D139B230EFF2700B295D6 /* ActionPlanView.swift */,
 				68F7128223104EFC003CFB1B /* LabChartView.swift */,
+				68F87D5E231C132E000C1FC9 /* RiskScoreCellView.swift */,
 			);
 			path = TrySwiftPrototype;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				681B2C3A23088715009098F8 /* SceneDelegate.swift in Sources */,
 				681B2C6823088DD8009098F8 /* NetworkManger.swift in Sources */,
 				681B2C6C23088E32009098F8 /* Office.swift in Sources */,
+				68F87D5F231C132E000C1FC9 /* RiskScoreCellView.swift in Sources */,
 				683D138C230DE82C00B295D6 /* LabRow.swift in Sources */,
 				683D139C230EFF2700B295D6 /* ActionPlanView.swift in Sources */,
 				681B2C6A23088E28009098F8 /* Provider.swift in Sources */,

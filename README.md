@@ -17,6 +17,7 @@ https://www.programmableweb.com/category/all/apis
 #### Running Server
 We are using a simple npm server to serve up `JSON`. To use:
 - `cd server`
+- `npm install`
 - `npm start`
 
 ### Xcode projects

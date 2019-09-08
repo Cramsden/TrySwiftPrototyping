@@ -46,7 +46,7 @@ class NetworkManager {
     }
 
     func fetchRiskScores(completion: @escaping (Error?, [RiskScore]) -> ()) {
-         makeCodableRequest(with: .listLabs, ofType: RiskScoresOutput.self) { (error, riskScoresOutput) in
+         makeCodableRequest(with: .listRiskScores, ofType: RiskScoresOutput.self) { (error, riskScoresOutput) in
             if let error = error {
                 completion(error, [])
             } else {
